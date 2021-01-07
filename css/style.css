@@ -2,6 +2,7 @@
   --ff1: Recoleta Bold;
   --ff2: "Spartan", sans-serif;
   --n: normal;
+  --clr: color: rgb(64, 63, 87); 
 }
 
 html,
@@ -17,12 +18,15 @@ a {
 li {
   list-style-type: none;
 }
+
 .ch-atom-h1 {
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 33px;
   font-family: var(--ff1);
+  letter-spacing: normal;
 }
+
 .ch-atom-h2 {
   font-size: 32px;
   font-weight: 700;
@@ -51,6 +55,7 @@ li {
 }
 
 /* Header */
+
 .ch-top-header {
   background: #63acfc;
   padding: 5px 15px;
@@ -100,26 +105,10 @@ li {
   padding-top: 10px;
   padding-bottom: 15px;
 }
+
 /* Header */
 
-@media only screen and (min-width: 768px) {
-  .ch-atom-h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: var(--ff1);
-  }
-
-  /* banner 1 */
-  .ch-header__logo {
-    width: 170px;
-    height: 52.1875px;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-}
-
+/* main banner  */
 .ch-banner-main {
   margin-top: 68px;
 }
@@ -127,7 +116,7 @@ li {
 .ch-banner-main__h1 {
   text-align: center;
   letter-spacing: normal;
-  color: rgb(64, 63, 87);
+  color: var(--clr);
 }
 
 .ch-banner-main__p {
@@ -157,9 +146,50 @@ li {
   margin-right: 2px;
 }
 
+/* main banner */
+
+/* section 2 */
+
+.ch-molc-cardt1 {
+  width: 152px;
+  align-items: center;
+  height: 112px;
+  border: none;
+}
+
+.ch-molc-cardt1__image {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.ch-molc-cardt1__h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  font-weight: 700;
+  font-family: var(--ff1);
+  color: var(--clr);
+}
+
+/* section 2 */
+
 /* LARGE DEVICES */
 @media screen and (min-width: 768px) {
+  .ch-atom-h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: var(--ff1);
+  }
+
+  .ch-header__logo {
+    width: 170px;
+    height: 52.1875px;
+  }
+
   /* / banner 1 */
+
   .ch-banner-main__h1 {
     text-align: left;
     font-family: var(--ff1);
@@ -169,11 +199,13 @@ li {
   }
 
   .ch-banner-main__customerimage {
-    width: 617px;
-    height: 346px;
-    margin-top: 10px;
+    width: 594px;
+    height: 583px;
+    margin-top: 1px;
     margin-right: 2px;
   }
+
+  /* banner 1 */
 }
 
 @media screen and (min-width: 992px) {

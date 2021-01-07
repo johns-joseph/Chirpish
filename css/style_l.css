@@ -1,0 +1,66 @@
+:root {
+  --ff1: Recoleta Bold;
+  --ff2: "Spartan", sans-serif;
+  --n: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* header */
+
+.navbar--mt {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.ch-header__logo {
+  width: 150.922px;
+  height: 50.3438px;
+}
+.ch-header__button {
+  border-bottom-color: rgb(99, 172, 252);
+  border-top-color: rgb(99, 172, 252);
+  border-right-color: rgb(99, 172, 252);
+  border-left-color: rgb(99, 172, 252);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 400;
+  height: 45px;
+  line-height: 21px;
+  width: 120px;
+  color: rgb(99, 172, 252) !important;
+  letter-spacing: 1px;
+  border-width: 2px;
+}
+
+/* header */
+
+/* banner 1 */
+
+.ch-banner-main__h1 {
+  text-align: left;
+  font-family: var(--ff1);
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.ch-banner-main__customerimage {
+  width: 617px;
+  height: 346px;
+  margin-top: -75px;
+  margin-right: 2px;
+  padding-right: 10px;
+}
+/* banner */

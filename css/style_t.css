@@ -1,0 +1,53 @@
+:root {
+  --ff1: Recoleta Bold;
+  --ff2: "Spartan", sans-serif;
+  --n: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.ch-atom-h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--ff1);
+}
+
+/* header */
+.ch-header__logo {
+  width: 170px;
+  height: 52.1875px;
+}
+
+/* header */
+
+/* / banner 1 */
+
+.ch-banner-main__h1 {
+  text-align: left;
+  font-family: var(--ff1);
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.ch-banner-main__customerimage {
+  width: 594px;
+  height: 583px;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+/* banner 1 */
