@@ -2,6 +2,8 @@
   --ff1: Recoleta Bold;
   --ff2: "Spartan", sans-serif;
   --n: normal;
+  --clr: rgb(64, 63, 87); /* black variation of headings */
+  --clr1: rgb(118, 118, 118); /* grey variation of para */
 }
 
 html,
@@ -19,10 +21,49 @@ li {
 }
 
 .ch-atom-h1 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 33px;
   font-family: var(--ff1);
+  letter-spacing: var(--n);
+  color: var(--clr);
+}
+
+.ch-atom-h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr);
+  font-family: var(--ff1);
+  letter-spacing: var(--n);
+}
+.ch-atom-h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clr);
+  font-family: var(--ff1);
+  letter-spacing: var(--n);
+}
+
+.ch-atom-body-heading {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ch-atom-p {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: var(--ff2);
+  color: var(--clr1);
+}
+
+.ch-atom-body-subpara {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.ch-atom-button {
+  color: #63acfc;
+  border-radius: 20%;
 }
 
 /* header */
@@ -51,3 +92,13 @@ li {
 }
 
 /* banner 1 */
+
+/* section 4 */
+/* refer molecules section */
+.ch-molc-empathy__image {
+  width: 681px;
+  height: 701px;
+  margin-top: 45px;
+}
+
+/* section 4 */

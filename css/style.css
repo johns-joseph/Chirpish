@@ -1,8 +1,10 @@
 :root {
   --ff1: Recoleta Bold;
-  --ff2: "Spartan", sans-serif;
+  --ff2: HK Nova;
   --n: normal;
-  --clr: color: rgb(64, 63, 87); 
+  --clr: rgb(64, 63, 87); /* black variation of headings */
+  --clr1: rgb(118, 118, 118); /* grey variation of para */
+  --br: 22px;
 }
 
 html,
@@ -10,6 +12,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Spartan", sans-serif;
+}
+.container {
+  width: 98%;
 }
 
 a {
@@ -19,22 +24,35 @@ li {
   list-style-type: none;
 }
 
+.container-mod {
+  width: 92%;
+  border-radius: var(--br);
+}
+
 .ch-atom-h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 33px;
   font-family: var(--ff1);
-  letter-spacing: normal;
+  letter-spacing: var(--n);
+  color: var(--clr);
 }
 
 .ch-atom-h2 {
   font-size: 32px;
   font-weight: 700;
+  color: var(--clr);
+  font-family: var(--ff1);
+  letter-spacing: var(--n);
 }
 .ch-atom-h3 {
   font-size: 20px;
   font-weight: 700;
+  color: var(--clr);
+  font-family: var(--ff1);
+  letter-spacing: var(--n);
 }
+
 .ch-atom-body-heading {
   font-size: 30px;
   font-weight: 700;
@@ -43,7 +61,10 @@ li {
 .ch-atom-p {
   font-size: 14px;
   font-weight: normal;
+  font-family: var(--ff2);
+  color: var(--clr1);
 }
+
 .ch-atom-body-subpara {
   font-size: 15px;
   font-weight: 100;
@@ -53,6 +74,81 @@ li {
   color: #63acfc;
   border-radius: 20%;
 }
+/* Molecules */
+
+.ch-molc-cardt1 {
+  width: 152px;
+  align-items: center;
+  height: 112px;
+  border: none;
+}
+
+.ch-molc-cardt1__image {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.ch-molc-cardt1__h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  font-weight: 700;
+  font-family: var(--ff1);
+  color: var(--clr);
+  margin-top: -7px;
+}
+
+.ch-molc-cardt2-howitwork {
+}
+
+.ch-molc-cardt2-howitwork--mod {
+  width: 130px;
+  align-items: center;
+  height: 112px;
+  border: none;
+}
+
+.ch-molc-cardt2-howitwork__image {
+  width: 60px;
+  height: 90px;
+}
+
+.ch-molc-cardt2-howitwork__h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: var(--n);
+  font-weight: 400;
+}
+
+.ch-molc-cardt2-howitwork__p {
+  font-size: 13px;
+  line-height: 19.5;
+  letter-spacing: var(--n);
+  font-weight: 400;
+}
+
+.ch-molc-empathy {
+}
+
+.ch-molc-empathy__h2 {
+  font-size: 31px;
+  line-height: 1.2;
+  letter-spacing: var(--n);
+  font-weight: 700;
+}
+
+.ch-molc-empathy__p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Molecules */
+
+/* Organisms */
+
+/* Organisms */
 
 /* Header */
 
@@ -106,6 +202,18 @@ li {
   padding-bottom: 15px;
 }
 
+.ch-header-container {
+  width: 180px;
+  height: 49px;
+  margin-left: -6px;
+  padding-top: 7px;
+}
+
+.ch-header-container__logo-text {
+  font-family: var(--ff1);
+  color: #63acfc;
+  font-size: 25px;
+}
 /* Header */
 
 /* main banner  */
@@ -136,7 +244,17 @@ li {
 .ch-banner-main__btn {
   width: 160px;
   height: 40px;
+  border-radius: 100px;
+  border: none;
+}
+
+.ch-banner-main__btn--lblue {
+  width: 160px;
+  height: 40px;
   margin-top: 45px;
+  border-radius: 100px;
+  border: none;
+  background-color: #63acfc;
 }
 
 .ch-banner-main__customerimage {
@@ -146,99 +264,264 @@ li {
   margin-right: 2px;
 }
 
+.bird1 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: white;
+  z-index: -1;
+}
+
+.bird2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 0;
+}
+
+.bird1--up {
+  animation: up 269ms infinite;
+}
+
+.bird2--down {
+  animation: down 269ms infinite;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    transform: translate(25px, 29px);
+  }
+  50% {
+    transform: translate(25px, 25px);
+  }
+  100% {
+    visibility: visible;
+    transform: translate(25px, 23px);
+  }
+}
+
+@keyframes down {
+  0% {
+    visibility: visible;
+    transform: translate(25px, 23px);
+  }
+  50% {
+    transform: translate(25px, 25px);
+  }
+  100% {
+    opacity: 0;
+    visibility: visible;
+    transform: translate(25px, 29px);
+  }
+}
+
 /* main banner */
 
 /* section 2 */
-
-.ch-molc-cardt1 {
-  width: 152px;
+.ch-sect2__a {
   align-items: center;
-  height: 112px;
-  border: none;
+  font-family: var(--ff2);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
 }
 
-.ch-molc-cardt1__image {
-  width: 70px;
-  height: 70px;
-  margin-top: 10px;
+.ch-sect2__img-starlink {
+  width: 90px;
+  height: 20px;
 }
 
-.ch-molc-cardt1__h3 {
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: normal;
-  font-weight: 700;
+.ch-sect2__h2 {
+  font-size: 25px;
+  line-height: 1.3;
+  letter-spacing: var(--n);
   font-family: var(--ff1);
   color: var(--clr);
 }
+/* check molecules section   */
 
 /* section 2 */
 
-/* LARGE DEVICES */
-@media screen and (min-width: 768px) {
-  .ch-atom-h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: var(--ff1);
-  }
-
-  .ch-header__logo {
-    width: 170px;
-    height: 52.1875px;
-  }
-
-  /* / banner 1 */
-
-  .ch-banner-main__h1 {
-    text-align: left;
-    font-family: var(--ff1);
-    font-size: 48px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-
-  .ch-banner-main__customerimage {
-    width: 594px;
-    height: 583px;
-    margin-top: 1px;
-    margin-right: 2px;
-  }
-
-  /* banner 1 */
+/* section 3 */
+.ch-howitwork {
 }
 
-@media screen and (min-width: 992px) {
-  .navbar--mt {
-    padding-top: 30px;
-    padding-bottom: 15px;
-  }
-  .ch-header__logo {
-    width: 150.922px;
-    height: 50.3438px;
-  }
-  .ch-header__button {
-    border-bottom-color: rgb(99, 172, 252);
-    border-top-color: rgb(99, 172, 252);
-    border-right-color: rgb(99, 172, 252);
-    border-left-color: rgb(99, 172, 252);
-    border-radius: 100px;
-    font-size: 11px;
-    font-weight: 400;
-    height: 45px;
-    line-height: 21px;
-    width: 120px;
-    color: rgb(99, 172, 252) !important;
-    letter-spacing: 1px;
-    border-width: 2px;
-  }
-
-  /* banner 1 */
-  .ch-banner-main__customerimage {
-    width: 617px;
-    height: 346px;
-    margin-top: -75px;
-    margin-right: 2px;
-    padding-right: 10px;
-  }
+.ch-howitwork__arrow {
+  width: 110px;
+  transform: rotate(45deg);
 }
+
+.ch-howitwork__arrow--inverted {
+  transform: rotate(145deg);
+  width: 110;
+}
+
+.ch-howitwork__h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  letter-spacing: var(--n);
+  font-weight: 700;
+}
+
+.ch-howitwork__p {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: var(--n);
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+/* section 3 */
+
+/* section3 */
+.ch-org-chirpish-work {
+  padding-top: 80px;
+}
+.ch-molc-chirpish-top {
+}
+.ch-molc-card2 {
+  padding-left: 15px;
+}
+.ch-atom-card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.ch-atom-cardimage2 {
+  width: auto;
+  height: 90px;
+}
+.ch-molc-card2__para {
+  color: rgb(118, 118, 118);
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 18px;
+  padding-top: 8px;
+}
+/* section3 */
+
+/* section 4 */
+/* refer molecules section */
+
+.ch-molc-empathy__image {
+  width: 291px;
+  height: 300px;
+  margin-top: 45px;
+}
+
+/* section 4 */
+
+/* section 8 */
+.ch-recruit {
+}
+
+.ch-recruit--round {
+  border-radius: var(--br);
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f8fbff;
+}
+
+/* section 8 */
+
+/* section 9 */
+.ch-readyto {
+}
+
+.ch-readyto--round {
+  width: 92%;
+  height: 411px;
+  border: 1px solid;
+  border-radius: 22px;
+  border-color: rgb(63, 207, 251);
+
+  padding-bottom: 20px;
+  margin-bottom: 34px;
+}
+
+.ch-readyto__bgimage {
+  background-image: url("/images/SOCIAL-MEDIA-1-2.png");
+  background-repeat: no-repeat;
+  background-color: #63acfc;
+  background-position: bottom;
+  background-size: 100% 100px;
+}
+
+.ch-readyto__h1 {
+  font-size: 29px;
+  line-height: 1.2;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.ch-readyto__p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+.ch-header__button--white {
+  /* border-bottom-color: rgb(99, 172, 252);
+  border-top-color: rgb(99, 172, 252);
+  border-right-color: rgb(99, 172, 252);
+  border-left-color: rgb(99, 172, 252); */
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 400;
+  height: 60px;
+  line-height: 21px;
+  width: 160px;
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+/* section 9 */
+
+/* section 10 */
+.ch-keepintouch {
+}
+
+.ch-keepintouch--round {
+  width: 92%;
+  height: 184px;
+  border: 1px solid;
+  border-radius: 22px;
+  border-color: rgb(63, 207, 251);
+  background-color: #eff7ff;
+}
+
+.ch-keepintouch__list {
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.ch-keepintouch__list-image {
+  width: 50px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ch-keepintouch__h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+/* section 10 */
+
+/* footer */
+.ch-footer {
+}
+
+.ch-footer__list1 {
+  list-style-type: none;
+}
+
+.ch-footer__list1-items {
+  padding-left: 5px;
+}
+/* footer */

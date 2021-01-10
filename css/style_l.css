@@ -2,6 +2,8 @@
   --ff1: Recoleta Bold;
   --ff2: "Spartan", sans-serif;
   --n: normal;
+  --clr: rgb(64, 63, 87); /* black variation of headings */
+  --clr1: rgb(118, 118, 118); /* grey variation of para */
 }
 
 html,
@@ -16,6 +18,52 @@ a {
 }
 li {
   list-style-type: none;
+}
+
+.ch-atom-h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 33px;
+  font-family: var(--ff1);
+  letter-spacing: var(--n);
+  color: var(--clr);
+}
+
+.ch-atom-h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr);
+  font-family: var(--ff1);
+  letter-spacing: var(--n);
+}
+.ch-atom-h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clr);
+  font-family: var(--ff1);
+  letter-spacing: var(--n);
+}
+
+.ch-atom-body-heading {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ch-atom-p {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: var(--ff2);
+  color: var(--clr1);
+}
+
+.ch-atom-body-subpara {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.ch-atom-button {
+  color: #63acfc;
+  border-radius: 20%;
 }
 
 /* header */
@@ -64,3 +112,14 @@ li {
   padding-right: 10px;
 }
 /* banner */
+
+/* /section 2 */
+.ch-sect2__h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: var(--n);
+  font-family: var(--ff1);
+  color: var(--clr);
+}
+
+/* section 2 */
