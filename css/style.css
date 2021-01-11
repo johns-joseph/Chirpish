@@ -520,7 +520,7 @@ li {
 
 .ch-readyto--round {
   width: 92%;
-  height: 411px;
+  height: 412px;
   border: 1px solid;
   border-radius: 22px;
   border-color: rgb(63, 207, 251);
@@ -575,7 +575,7 @@ li {
 
 .ch-keepintouch--round {
   width: 92%;
-  height: 184px;
+  height: 372px;
   border: 1px solid;
   border-radius: 22px;
   border-color: rgb(63, 207, 251);
@@ -600,6 +600,28 @@ li {
   font-size: 30px;
   margin-bottom: 10px;
 }
+
+.ch-molc-banner__button{
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(99, 172, 252);
+  height: 60px;
+  width: 160px;
+  line-height: 18px;
+}
+.ch-molc-banner__button--white{
+  color: rgb(99, 172, 252);
+  background-color: white;
+  border-color: rgb(99, 172, 252);
+  }
+
+  .form-control--size{
+    border-radius: 100px;
+    width: 270px;
+    height: 60px;
+    display: inline;
+  }
 /* section 10 */
 
 /* footer */
@@ -634,7 +656,9 @@ padding: 0;
 }
 .ch-molc-footer-list__item2{
 font-size: 9px;
-padding: 5px;
+padding-left:9px;
+padding-right:5px;
+margin-right:auto;
 }
 
 /* footer */
