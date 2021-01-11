@@ -1,9 +1,20 @@
-:root {
+/* :root {
   --ff1: Recoleta Bold;
   --ff2: "Spartan", sans-serif;
   --n: normal;
   --clr: rgb(64, 63, 87); /* black variation of headings */
-  --clr1: rgb(118, 118, 118); /* grey variation of para */
+/*  --clr1: rgb(118, 118, 118); /* grey variation of para 
+} */
+
+:root {
+  --ff1: Recoleta Bold;
+  --ff2: HK Nova;
+  --n: normal;
+  --clr: #403f57; /* black variation of headings  rgb(64, 63, 87); */
+  --clr1: #767676; /* grey variation of para rgb(118, 118, 118); */
+  --lblue: #63acfc;
+  --whblue: red; /* #f8fbff;  very whitish blue color in container background */
+  --br: 40px;
 }
 
 html,

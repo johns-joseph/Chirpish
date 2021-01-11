@@ -2,9 +2,11 @@
   --ff1: Recoleta Bold;
   --ff2: HK Nova;
   --n: normal;
-  --clr: rgb(64, 63, 87); /* black variation of headings */
-  --clr1: rgb(118, 118, 118); /* grey variation of para */
-  --br: 22px;
+  --clr: #403f57; /* black variation of headings  rgb(64, 63, 87); */
+  --clr1: #767676; /* grey variation of para rgb(118, 118, 118); */
+  --lblue: #63acfc;
+  --whblue: #f8fbff; /*  very whitish blue color in container background */
+  --br: 40px;
 }
 
 html,
@@ -27,6 +29,7 @@ li {
 .container-mod {
   width: 92%;
   border-radius: var(--br);
+  background-color: var(--whblue);
 }
 
 .ch-atom-h1 {
@@ -128,26 +131,30 @@ li {
   font-weight: 400;
 }
 
-.ch-molc-empathy {
+/* Molecules */
+
+/* Organisms */
+.ch-org-emp {
 }
 
-.ch-molc-empathy__h2 {
-  font-size: 31px;
+.ch-org-emp__h2 {
+  font-size: 30px;
   line-height: 1.2;
   letter-spacing: var(--n);
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
-.ch-molc-empathy__p {
+.ch-org-emp__p {
   font-size: 15px;
   line-height: 1.5;
   font-weight: 400;
 }
 
-/* Molecules */
-
-/* Organisms */
-
+.ch-org-emp__image {
+  width: 291px;
+  height: 200px;
+}
 /* Organisms */
 
 /* Header */
@@ -218,7 +225,14 @@ li {
 
 /* main banner  */
 .ch-banner-main {
+}
+
+.ch-banner-main--round {
+  width: 92%;
+  border-radius: var(--br);
   margin-top: 68px;
+  margin-bottom: 50px;
+  background-color: var(--whblue);
 }
 
 .ch-banner-main__h1 {
@@ -232,7 +246,7 @@ li {
   line-height: 21px;
   font-weight: 400;
   font-family: var(--ff2);
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .ch-banner-main__list {
@@ -250,18 +264,26 @@ li {
 
 .ch-banner-main__btn--lblue {
   width: 160px;
-  height: 40px;
-  margin-top: 45px;
+  height: 62px;
+  margin-top: 24px;
   border-radius: 100px;
   border: none;
   background-color: #63acfc;
+  font-weight: 500;
+}
+
+.ch-banner-main__p2 {
+  color: var(--lblue);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 21px;
 }
 
 .ch-banner-main__customerimage {
-  width: 100%;
+  width: 110%;
   height: 206px;
   margin-top: 10px;
-  margin-right: 2px;
+  padding-right: 20px;
 }
 
 .bird1 {
@@ -320,17 +342,28 @@ li {
 /* main banner */
 
 /* section 2 */
-.ch-sect2__a {
+.ch-sect2 {
+}
+
+.ch-sect2--round {
+  height: 562px;
+  background-color: var(--whblue);
+  margin-top: 5px;
+}
+
+.ch-sect2__p {
   align-items: center;
   font-family: var(--ff2);
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
+  margin-top: 50px;
 }
 
 .ch-sect2__img-starlink {
   width: 90px;
   height: 20px;
+  margin-top: 48px;
 }
 
 .ch-sect2__h2 {
@@ -339,6 +372,24 @@ li {
   letter-spacing: var(--n);
   font-family: var(--ff1);
   color: var(--clr);
+  margin-top: -25px;
+}
+
+.ch-sect2__rocket {
+  width: 90px;
+  height: 75px;
+  display: inline-block;
+  position: absolute;
+}
+
+.ch-sect2__rocket--transform1 {
+  transform-origin: left;
+  transform: translate(210px, -22px) rotate(2deg);
+}
+
+.ch-sect2__rocket--transform2 {
+  /* transform-origin: right; */
+  transform: rotate(30deg);
 }
 /* check molecules section   */
 
@@ -348,14 +399,19 @@ li {
 .ch-howitwork {
 }
 
-.ch-howitwork__arrow {
-  width: 110px;
-  transform: rotate(45deg);
+.ch-chirpish-work__arrow {
+  width: 135px;
+  height: 40px;
+  position: relative;
 }
 
-.ch-howitwork__arrow--inverted {
-  transform: rotate(145deg);
-  width: 110;
+.ch-chirpish-work__arrow--transform1 {
+  transform-origin: 169%;
+  transform: translate(112px, -2px) rotate(52deg);
+}
+
+.ch-chirpish-work__arrow--transform2 {
+  transform: scaleX(-1) translate(10px, -123px) rotate(-299deg);
 }
 
 .ch-howitwork__h2 {
@@ -372,10 +428,10 @@ li {
   font-weight: 400;
   margin-top: 18px;
 }
-
 /* section 3 */
 
 /* section3 */
+
 .ch-org-chirpish-work {
   padding-top: 80px;
 }
@@ -403,14 +459,40 @@ li {
 
 /* section 4 */
 /* refer molecules section */
+.ch-emp-container {
+}
 
-.ch-molc-empathy__image {
-  width: 291px;
+.ch-org-emp__image--mod {
+  width: 300px;
   height: 300px;
-  margin-top: 45px;
+  margin-top: 65px;
 }
 
 /* section 4 */
+
+/* section 5 carousel */
+.ch-molc-cardsrow {
+}
+
+.ch-molc-cardsrow-t3 {
+  width: 200px;
+  height: 200px;
+  border:none;
+}
+
+.ch-molc-cardsrow-t3__image {
+  width: 45px;
+  height: 45px;
+
+}
+
+.ch-molc-cardsrow-t3__h3{font-family: var(--ff1); font-size:20px; color:var(--clr);
+}
+
+.ch-molc-cardsrow-t3__p {font-family: var(--ff2); font-size:15px; color:var(--clr1);
+}
+
+/* section 5 carousel */
 
 /* section 8 */
 .ch-recruit {
@@ -514,11 +596,19 @@ li {
 /* section 10 */
 
 /* footer */
+.birdbox--big {
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
 .ch-footer {
 }
 
 .ch-footer__list1 {
   list-style-type: none;
+  font-family: var(--ff2);
+  align-items: center;
 }
 
 .ch-footer__list1-items {
