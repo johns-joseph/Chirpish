@@ -84,6 +84,7 @@ li {
   align-items: center;
   height: 112px;
   border: none;
+  background-color: var(--whblue);
 }
 
 .ch-molc-cardt1__image {
@@ -152,7 +153,7 @@ li {
 }
 
 .ch-org-emp__image {
-  width: 291px;
+  width: 350px;
   height: 200px;
 }
 /* Organisms */
@@ -391,6 +392,10 @@ li {
   /* transform-origin: right; */
   transform: rotate(30deg);
 }
+
+.ch-sect2__headphone{width:370px; height:400px;}
+
+.ch-sect2__headphone--mod{transform:  translate(10px,20px);}
 /* check molecules section   */
 
 /* section 2 */
@@ -460,12 +465,14 @@ li {
 /* section 4 */
 /* refer molecules section */
 .ch-emp-container {
+  background-color: var(--whblue);
 }
 
 .ch-org-emp__image--mod {
   width: 300px;
   height: 300px;
   margin-top: 65px;
+  background-color: var(--whblue);
 }
 
 /* section 4 */
@@ -614,4 +621,20 @@ li {
 .ch-footer__list1-items {
   padding-left: 5px;
 }
+
+.ch-org-footer{
+
+}
+.ch-molc-footer-list{
+padding: 0;
+}
+.ch-molc-footer-list__item{
+  font-size: 13px;
+  padding: 8px;
+}
+.ch-molc-footer-list__item2{
+font-size: 9px;
+padding: 5px;
+}
+
 /* footer */

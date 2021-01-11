@@ -113,3 +113,18 @@ li {
 }
 
 /* section 4 */
+
+/* footer */
+
+.ch-org-footer{}
+
+.ch-molc-footer-list{ padding: 0; }
+
+  .ch-molc-footer-list--pl{ padding-left: 193px; }
+
+  .ch-molc-footer-list__item{ font-size: 13px; padding: 10px; }
+
+  .ch-molc-footer-list__item2{ font-size: 13px; padding: 5px; }
+
+
+/* footer */
