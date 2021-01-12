@@ -377,11 +377,10 @@ li {
   margin-top: -25px;
 }
 
-.ch-sect2__rocket {
+.ch-sect2__rocket{
   width: 90px;
   height: 75px;
-  display: inline-block;
-  position: absolute;
+  position: relative;
 }
 
 .ch-sect2__rocket--transform1 {
@@ -397,6 +396,7 @@ li {
 .ch-sect2__headphone {
   width: 370px;
   height: 400px;
+  position: absolute;
 }
 
 .ch-sect2__headphone--mod {
