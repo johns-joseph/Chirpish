@@ -413,16 +413,16 @@ li {
 .ch-chirpish-work__arrow {
   width: 135px;
   height: 40px;
-  position: relative;
+  position: absolute;
 }
 
 .ch-chirpish-work__arrow--transform1 {
-  transform-origin: 169%;
-  transform: translate(112px, -2px) rotate(52deg);
+  transform: translate(148px, 65px) rotate(44deg);
 }
 
 .ch-chirpish-work__arrow--transform2 {
-  transform: scaleX(-1) translate(10px, -123px) rotate(-299deg);
+  transform: scaleX(-1) translate(14px, 275px) rotate(-299deg);
+
 }
 
 .ch-howitwork__h2 {
@@ -455,6 +455,7 @@ li {
   font-size: 20px;
   font-weight: 700;
 }
+
 .ch-atom-cardimage2 {
   width: auto;
   height: 90px;

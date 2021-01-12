@@ -179,8 +179,22 @@ li {
   margin-top: 48px;
 }
 /* section 2 */
+/* section3 */
+.ch-org-chirpish-work {
+  
+}
+.ch-org-chirpish-work--mod{margin-top:-55px;}
 
+.ch-atom-card-title {
+  font-size: 25px;
+  font-weight: 700;
+}
 
+.ch-chirpish-work__arrow--transform1 { transform: translate(350px, 65px) rotate(-320deg);}
+
+.ch-chirpish-work__arrow--transform2{ transform: scaleX(-1) translate(-157px, 292px) rotate(-303deg); }
+
+/* section3 */
 /* section 4 */
 /* refer molecules section */
 .ch-molc-empathy__image {
