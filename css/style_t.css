@@ -13,7 +13,7 @@
   --clr: #403f57; /* black variation of headings  rgb(64, 63, 87); */
   --clr1: #767676; /* grey variation of para rgb(118, 118, 118); */
   --lblue: #63acfc;
-  --whblue:#f8fbff;  /*  very whitish blue color in container background */
+  --whblue: #f8fbff; /*  very whitish blue color in container background */
   --br: 40px;
 }
 
@@ -106,7 +106,7 @@ li {
   font-size: 48px;
   line-height: 1.2;
   font-weight: 700;
-  margin-left:13px;
+  margin-left: 13px;
   margin-top: 69px;
 }
 
@@ -138,18 +138,22 @@ li {
   padding-right: 10px;
 }
 
-.ch-banner-main__p2{padding-left: 35px;margin-top:5px;color:var(--lblue);}
+.ch-banner-main__p2 {
+  padding-left: 35px;
+  margin-top: 5px;
+  color: var(--lblue);
+}
 
 /* banner 1 */
 
 /* section 2 */
 .ch-sect2--round {
   height: 562px;
-  width:90%;
+  width: 90%;
   /* border:1px solid blue; */
   background-color: var(--whblue);
   margin-top: 5px;
-  margin-bottom:-54px;
+  margin-bottom: -54px;
 }
 
 .ch-sect2__headphone {
@@ -165,13 +169,13 @@ li {
 
 .ch-sect2__rocket--transform1 {
   transform-origin: left;
-  transform: translate(525px,30px) rotate(2deg);
+  transform: translate(525px, 30px) rotate(2deg);
 }
 
 .ch-sect2__rocket--transform2 {
   /* transform-origin: right; */
-  transform: translate(600px,-52px) rotate(42deg);
-} 
+  transform: translate(600px, -52px) rotate(42deg);
+}
 
 .ch-sect2__img-starlink {
   width: 90px;
@@ -181,22 +185,52 @@ li {
 /* section 2 */
 /* section3 */
 .ch-org-chirpish-work {
-  
 }
-.ch-org-chirpish-work--mod{margin-top:-55px;}
+.ch-org-chirpish-work--mod {
+  margin-top: -55px;
+}
 
 .ch-atom-card-title {
   font-size: 25px;
   font-weight: 700;
 }
 
-.ch-chirpish-work__arrow--transform1 { transform: translate(350px, 65px) rotate(-320deg);}
+.ch-chirpish-work__arrow--transform1 {
+  transform: translate(350px, 65px) rotate(-320deg);
+}
 
-.ch-chirpish-work__arrow--transform2{ transform: scaleX(-1) translate(-157px, 292px) rotate(-303deg); }
+.ch-chirpish-work__arrow--transform2 {
+  transform: scaleX(-1) translate(-157px, 292px) rotate(-303deg);
+}
 
 /* section3 */
 /* section 4 */
 /* refer molecules section */
+.ch-org-emp--mod {
+  height: 800px;
+  margin-top: 120px;
+}
+
+.ch-org-emp__h2 {
+  font-size: 32px;
+}
+
+.ch-org-emp__p {
+  font-size: 14px;
+}
+
+.ch-org-emp__image {
+  width: 685px;
+  height: 669px;
+}
+
+.ch-org-emp__image--mod {
+  margin-top: 13px;
+  background-color: var(--whblue);
+  border-radius: var(--br);
+
+}
+
 .ch-molc-empathy__image {
   width: 681px;
   height: 701px;
@@ -204,6 +238,27 @@ li {
 }
 
 /* section 4 */
+
+/* section 5 carousel */
+
+
+.ch-molc-cardsrow-t3 {
+  width: 333px;
+  height: 200px;
+  border: none;
+}
+
+.ch-molc-cardsrow-t3--mod{margin-top:163px; margin-bottom: 20px;}
+
+/* .ch-molc-cardsrow-t3__image--pl{padding-left: 10px;} */
+
+/* section 5 carousel */
+
+.ch-designed{}
+.ch-designed--mod{margin-bottom:109px; margin-top:135px;}
+
+.ch-designed__p{font-weight: 200;}
+
 
 /* section 10 */
 .ch-keepintouch--round {
@@ -217,14 +272,26 @@ li {
 /* section 10 */
 
 /* footer */
-.ch-org-footer{}
+.ch-org-footer {
+}
 
-.ch-molc-footer-list{ padding: 0; }
+.ch-molc-footer-list {
+  padding: 0;
+}
 
-.ch-molc-footer-list--pl{ padding-left:206px;padding-right:206px;}
+.ch-molc-footer-list--pl {
+  padding-left: 206px;
+  padding-right: 206px;
+}
 
-.ch-molc-footer-list__item{ font-size: 13px; padding: 10px; }
+.ch-molc-footer-list__item {
+  font-size: 13px;
+  padding: 10px;
+}
 
-.ch-molc-footer-list__item2{ font-size: 13px; padding: 5px; }
+.ch-molc-footer-list__item2 {
+  font-size: 13px;
+  padding: 5px;
+}
 
 /* footer */
