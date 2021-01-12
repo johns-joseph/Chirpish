@@ -13,7 +13,7 @@
   --clr: #403f57; /* black variation of headings  rgb(64, 63, 87); */
   --clr1: #767676; /* grey variation of para rgb(118, 118, 118); */
   --lblue: #63acfc;
-  --whblue: red; /* #f8fbff;  very whitish blue color in container background */
+  --whblue:#f8fbff;  /*  very whitish blue color in container background */
   --br: 40px;
 }
 
@@ -29,6 +29,12 @@ a {
 }
 li {
   list-style-type: none;
+}
+
+.container-mod {
+  width: 90%;
+  border-radius: var(--br);
+  background-color: var(--whblue);
 }
 
 .ch-atom-h1 {
@@ -86,6 +92,13 @@ li {
 /* header */
 
 /* / banner 1 */
+.ch-banner-main--round {
+  width: 90%;
+  border-radius: var(--br);
+  margin-top: -14px;
+  margin-bottom: 50px;
+  background-color: var(--whblue);
+}
 
 .ch-banner-main__h1 {
   text-align: left;
@@ -93,14 +106,39 @@ li {
   font-size: 48px;
   line-height: 1.2;
   font-weight: 700;
+  margin-left:13px;
+  margin-top: 69px;
+}
+
+.ch-banner-main__p {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: var(--ff2);
+  margin-top: 9px;
+  margin-left: 10px;
 }
 
 .ch-banner-main__customerimage {
-  width: 594px;
-  height: 583px;
-  margin-top: 1px;
-  margin-right: 2px;
+  width: 614px;
+  height: 340px;
+  margin-top: -14px;
+  margin-right: -11px;
 }
+
+.ch-banner-main__btn--lblue {
+  width: 160px;
+  height: 62px;
+  margin-top: 24px;
+  margin-left: 11px;
+  border-radius: 100px;
+  border: none;
+  background-color: #63acfc;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.ch-banner-main__p2{padding-left: 35px;margin-top:5px;color:var(--lblue);}
 
 /* banner 1 */
 
@@ -114,17 +152,26 @@ li {
 
 /* section 4 */
 
-/* footer */
+/* section 10 */
+.ch-keepintouch--round {
+  width: 90%;
+  height: 372px;
+  border: 1px solid;
+  border-radius: 22px;
+  border-color: rgb(63, 207, 251);
+  background-color: #eff7ff;
+}
+/* section 10 */
 
+/* footer */
 .ch-org-footer{}
 
 .ch-molc-footer-list{ padding: 0; }
 
-  .ch-molc-footer-list--pl{ padding-left: 193px; }
+.ch-molc-footer-list--pl{ padding-left:206px;padding-right:206px;}
 
-  .ch-molc-footer-list__item{ font-size: 13px; padding: 10px; }
+.ch-molc-footer-list__item{ font-size: 13px; padding: 10px; }
 
-  .ch-molc-footer-list__item2{ font-size: 13px; padding: 5px; }
-
+.ch-molc-footer-list__item2{ font-size: 13px; padding: 5px; }
 
 /* footer */
